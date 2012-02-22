@@ -41,7 +41,8 @@ public abstract class TPM2Protocol {
 
         byte[] output_buffer = new byte[frame.length * 3 + 5];
 
-        int frame_size = frame.length;
+        //3 colors per pixel
+        int frame_size = frame.length * 3;
         byte frame_size_byte_high;
         byte frame_size_byte_low;
         int index;
